@@ -140,7 +140,7 @@ router.post('/articles/comment/:id2/delete', function(req, res) {
   });
 });
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('App listening on PORT: ' + port);
 });
